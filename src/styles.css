@@ -1,0 +1,65 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#root {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: black;
+}
+#root {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+canvas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+body {
+  background-color: black;
+}
+
+.watermark {
+  opacity: 0.5;
+  top: 10%;
+  left: 2%;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  z-index: 240001;
+  width: 10%;
+  height: auto;
+}
+.iconify {
+  font-size: 5rem;
+  cursor: pointer;
+  margin-left: calc(50vw - 40px);
+  position: absolute;
+  opacity: 0.5;
+  background-color: transparent;
+  color: white;
+  z-index: 240001;
+  top: 80%;
+}
+.iconify.pause {
+  opacity: 0;
+  transition: all 1s;
+}
+.iconify.pause:hover {
+  opacity: 0.5;
+  visibility: initial;
+}
